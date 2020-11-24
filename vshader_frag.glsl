@@ -17,7 +17,7 @@ void main()
 
 	// TODO 将顶点变换到相机坐标系下
 	// vec4 vertPos_cameraspace = ...;
-	vec4 vertPos_cameraspace = modelViewProjMatrix * vec4(vPosition, 1.0);
+	vec4 vertPos_cameraspace = modelViewMatrix * vec4(vPosition, 1.0);
 
 	// 对顶点坐标做透视投影
 	// V = ...;
